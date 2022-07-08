@@ -1,5 +1,4 @@
-patika-todeb-javaspringbootcamp-teorik-odevler-hamdiyecoskun
-patika-todeb-javaspringbootcamp-teorik-odevler-hamdiyecoskun created by GitHub Classroom
+
 ## 1 – IOC and DI means ?
  
 `Inversion of control` bir yazılım tasarım prensibidir. IOC ile uygulama içerisindeki obje instance’larının yönetimi sağlanarak, bağımlılıklarını en aza indirgemek amaçlanmaktadır. Projemizdeki bağımlılıkların oluşturulmasını ve yönetilmesini geliştiricinin yerine, framework’ün yapması olarak da açıklanabilir.
