@@ -36,16 +36,16 @@ Bir dosyanın değişik sürümlerini korumak istiyorsak, `VCS` kullanırız. `V
 ## 9 – What are SOLID Principles ? Give sample usages in Java ?
 `SOLID` prensipleri ; geliştirilen herhangi bir yazılımın esnek, yeniden kullanılabilir, sürdürülebilir ve anlaşılır olmasını sağlayan, kod tekrarını önleyen prensiptir. Kodun esnek, sürdürülebilir ve geliştirilebilir tasarlanmaması kodu kırılganlaştırır ve yazılım ürününün gelişmesini etkiler. `SOLID` 5 farklı prensipten oluşur ve her birini baş harfini alır.
 
-` S : Single Responsibility Principle (SRP)`
+* ` S : Single Responsibility Principle (SRP)`
 Bir sınıf (nesne) yalnızca bir amaç uğruna değiştirilebilir, o da o sınıfa yüklenen sorumluluktur, yani bir sınıfın(fonksiyona da indirgenebilir) yapması gereken yalnızca bir işi olması gerekir.
-` O : Open Closed Principle (OSP)`
+* ` O : Open Closed Principle (OSP)`
 Bir sınıf ya da fonksiyon halihazırda var olan özellikleri korumalı ve değişikliğe izin vermemelidir. Yani davranışını değiştirmiyor olmalı ve yeni özellikler kazanabiliyor olmalıdır.
-` L: Liskov substitution principle`
+* ` L: Liskov substitution principle`
 Kodlarımızda herhangi bir değişiklik yapmaya gerek duymadan alt sınıfları, türedikleri(üst) sınıfların yerine kullanabilmeliyiz.
-` I: Interface segregation principle`
+* ` I: Interface segregation principle`
 Sorumlulukların hepsini tek bir arayüze toplamak yerine daha özelleştirilmiş birden fazla arayüz oluşturmalıyız.
 
-` D: Dependency Inversion Principle`
+* ` D: Dependency Inversion Principle`
 Sınıflar arası bağımlılıklar olabildiğince az olmalıdır özellikle üst seviye sınıflar alt seviye sınıflara bağımlı olmamalıdır.
 
 ## 10 - What is RAD model ?
@@ -74,16 +74,19 @@ Geliştirilecek olan proje türüne göre ihtiyaç duyulan ve kullanılacak küt
 ## 12 – What are the Spring Boot Annotations?
 Bir öğenin tanımını yapar, ne yapması gerektiğini açıklar ve yazılım geliştirme sürecini hem hızlandırır hem de kolaylaştırır.
 Örn :` @Entity, @TestCase, @WebService`
+
 `Anotasyon`lar kodun içerisinde tanımlandıktan sonra, işlevsel hale gelebilmeleri için Spring tarafından 2 defa taranırlar.
 İlk önce yalnızca anotasyonları (spring tarafından yönetilen bean) taranır ve yapılması gereken görev eşleştirmeleri yapılır.
 İkinci taramada ise anotasyon tanımlamasına göre işlemini yapar.
 Tüm Spring Bean’leri “App Context” yada "Spring Context" (IoC container) adı verilen bir container içinde yaşarlar
 
 ## 13 – What is Spring Boot dependency management?
-Nesne yönelimli programlama metodolojisi ile yazılımın geliştirildiği ortamlarda ilerleyen süreçlerde nesneler arası bağ kurmak zor olabiliyor. Bir nesnede yapılan değişiklikler veya yerine başka nesneyi koymak, başka yerlerde problemlere yol açabiliyor. Bu problemleri en aza indirmek için de Dependency Inversion gibi prensiplere ihtiyaç duyuyoruz. `“Dependency Inversion”` prensibi, sınıfları arası geçişlerin `“loosely coupled”` yani “gevşek bağlı” olması anlamına geliyor. Yüksek seviye sınıfların, düşük seviye sınıflara direkt bağlı olmaması, her ikisinin de soyutlamalara bağlı olması beklenilen davranıştır. Buradaki soyutlamalar, detaylara bağlı olmamalıdır. Detaylar, soyutlamalara bağlı olmalıdır.
+Nesne yönelimli programlama metodolojisi ile yazılımın geliştirildiği ortamlarda ilerleyen süreçlerde nesneler arası bağ kurmak zor olabiliyor. Bir nesnede yapılan değişiklikler veya yerine başka nesneyi koymak, başka yerlerde problemlere yol açabiliyor. Bu problemleri en aza indirmek için de `Dependency Inversion` gibi prensiplere ihtiyaç duyuyoruz. 
+
+`“Dependency Inversion”` prensibi, sınıfları arası geçişlerin `“loosely coupled”` yani `“gevşek bağlı”` olması anlamına geliyor. Yüksek seviye sınıfların, düşük seviye sınıflara direkt bağlı olmaması, her ikisinin de soyutlamalara bağlı olması beklenilen davranıştır. Buradaki soyutlamalar, detaylara bağlı olmamalıdır. Detaylar, soyutlamalara bağlı olmalıdır.
 
 ## 14 -  What is Spring Boot Actuator?
-Yaptığımız ya da yapacağımız Spring Boot uygulamalarımızın endpoint yardımı ile çalışan Spring Boot uygulaması hakkında bilgi almamızı sağlamaktadır
+Yaptığımız ya da yapacağımız Spring Boot uygulamalarımızın endpoint yardımı ile çalışan Spring Boot uygulaması hakkında bilgi almamızı sağlamaktadır.
 Spring Boot uygulamanızın sonuna `actuator/beans` , `actuator/health` gibi yukarıda belirlediğimiz parametreleri yazarak endpointlere ulaşıp bilgi almamız mümkün olmaktadır
 
 
